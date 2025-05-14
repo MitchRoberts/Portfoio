@@ -3,9 +3,13 @@
 import { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 
+type VantaEffect = {
+  destroy?: () => void;
+};
+
 export default function HeroSection() {
   const vantaRef = useRef<HTMLDivElement>(null);
-  const [vantaEffect, setVantaEffect] = useState<any>(null);
+  const [vantaEffect, setVantaEffect] = useState<VantaEffect | null>(null);
 
   useEffect(() => {
     if (!vantaEffect && typeof window !== 'undefined') {
@@ -14,7 +18,7 @@ export default function HeroSection() {
       script.src = 'https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.stars.min.js';
       script.async = true;
       script.onload = () => {
-        // @ts-ignore
+        // @ts-expect-error
         const VANTA = window.VANTA;
         const effect = VANTA.STARS({
           el: vantaRef.current,
