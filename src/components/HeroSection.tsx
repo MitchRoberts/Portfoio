@@ -18,7 +18,7 @@ export default function HeroSection() {
       script.src = 'https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.stars.min.js';
       script.async = true;
       script.onload = () => {
-        // @ts-expect-error
+        // @ts-expect-error: VANTA is a global UMD module loaded from CDN, not typed
         const VANTA = window.VANTA;
         const effect = VANTA.STARS({
           el: vantaRef.current,
@@ -37,7 +37,7 @@ export default function HeroSection() {
     }
 
     return () => {
-      if (vantaEffect) vantaEffect.destroy?.();
+      vantaEffect?.destroy?.();
     };
   }, [vantaEffect]);
 
