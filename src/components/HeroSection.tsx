@@ -13,7 +13,6 @@ export default function HeroSection() {
 
   useEffect(() => {
     if (!vantaEffect && typeof window !== 'undefined') {
-      // Load the Vanta script from CDN
       const script = document.createElement('script');
       script.src = 'https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.stars.min.js';
       script.async = true;
@@ -42,22 +41,19 @@ export default function HeroSection() {
   }, [vantaEffect]);
 
   return (
-    <div ref={vantaRef} className="w-full h-screen flex items-center justify-center text-white">
-      <div className="text-center z-10 px-6">
-        <h1 className="text-5xl md:text-7xl font-bold mb-4">Mitch Roberts</h1>
-        <p className="text-xl md:text-2xl mb-8">Engineer | Dreamer | Space-Tech Enthusiast</p>
-        <div className="space-x-4">
+    <div
+      ref={vantaRef}
+      className="w-full h-screen relative bg-black"
+    >
+      <div className="absolute inset-0 flex items-center justify-center text-white z-10 text-center px-4">
+        <div>
+          <h1 className="text-5xl md:text-7xl font-bold mb-4">Mitch Roberts</h1>
+          <p className="text-xl md:text-2xl mb-8">Engineer | Dreamer | Space-Tech Enthusiast</p>
           <a
             href="/resume.pdf"
             className="bg-white text-black font-semibold py-2 px-4 rounded hover:bg-gray-200 transition"
           >
             View Resume
-          </a>
-          <a
-            href="#projects"
-            className="border border-white text-white font-semibold py-2 px-4 rounded hover:bg-white hover:text-black transition"
-          >
-            See My Work
           </a>
         </div>
       </div>
