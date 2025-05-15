@@ -68,7 +68,7 @@ export default function Page() {
           {activeSection === 'about' && <AboutSection />}
           {activeSection === 'skills' && <SkillsSection />}
           {activeSection === 'projects' && (
-            <ProjectsSection projects={allProjects} onProjectClick={handleProjectClick} />
+            <ProjectsSection project={allProjects} onProjectClick={handleProjectClick} />
           )}
           {activeSection === 'contact' && <ContactSection />}
 
