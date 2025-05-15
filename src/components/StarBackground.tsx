@@ -1,7 +1,7 @@
 // components/StarBackground.tsx
 'use client';
 
-import { useEffect, useState } from "react";
+import { useMemo, useEffect, useState } from "react";
 
 type Star = {
   id: number;
@@ -65,7 +65,7 @@ export default function StarBackground() {
   };
 
   return (
-    <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
+    <div className="fixed inset-0 overflow-hidden pointer-events-none z-1">
       {stars.map((star) => (
         <div
           key={star.id}
