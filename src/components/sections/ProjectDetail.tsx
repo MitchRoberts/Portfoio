@@ -1,5 +1,7 @@
+import { Project } from '@/types/Project';
+
 type ProjectDetailProps = {
-  project: any;
+  project: Project;
   onBack: () => void;
 };
 
@@ -12,7 +14,7 @@ export default function ProjectDetail({ project, onBack }: ProjectDetailProps) {
       <h2 className="text-4xl font-bold mb-4">{project.title}</h2>
       <p className="text-gray-300 mb-6">{project.details}</p>
       <div className="flex flex-wrap gap-2 mb-6">
-        {project.tech.map((tech: string) => (
+        {project.tech && project.tech.map((tech) => (
           <span
             key={tech}
             className="px-2 py-1 text-sm bg-gray-800 border border-gray-700 rounded"

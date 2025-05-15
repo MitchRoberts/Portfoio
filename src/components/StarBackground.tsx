@@ -1,7 +1,7 @@
 // components/StarBackground.tsx
 'use client';
 
-import { useMemo, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 type Star = {
   id: number;
