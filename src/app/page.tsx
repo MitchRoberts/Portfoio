@@ -18,7 +18,7 @@ const allProjects = [
     slug: "munstar-1",
     title: "MUNStar-1 Communications",
     description: "Designed and implemented the satellite's internal and external communication systems using UART, RS-485, and I2C.",
-    tech: ["VHDL", "UART", "C", "Embedded"],
+    tech: ["VHDL", "UART", "C", "Python", "Embedded"],
   },
   {
     slug: "appartment",
@@ -54,7 +54,7 @@ export default function Page() {
 
   return (
     <div className="relative bg-black text-white min-h-screen overflow-hidden">
-      <div className="fixed inset-0 z-0 pointer-events-none">
+      <div className="fixed inset-0 z-50 pointer-events-none">
         <StarBackground />
       </div>
       <div className="relative z-10">
