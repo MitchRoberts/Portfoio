@@ -16,7 +16,7 @@ export default function HomeSection() {
           View Resume
         </button>
         <a
-          href="/resume.pdf"
+          href="/Resume.pdf"
           download
           className="border border-white text-white font-semibold py-2 px-6 rounded hover:bg-white hover:text-black transition"
         >
@@ -28,13 +28,13 @@ export default function HomeSection() {
         <div className="fixed inset-0 z-40 flex items-center justify-center bg-black/80 backdrop-blur-sm">
           <div className="relative w-full max-w-5xl h-[90vh] bg-white rounded-lg overflow-hidden shadow-lg">
             <object
-              data="/resume.pdf"
+              data="/Resume.pdf"
               type="application/pdf"
               className="w-full h-full"
             >
               <p className="text-black p-4 text-center">
                 Your browser does not support embedded PDFs.{' '}
-                <a href="/resume.pdf" target="_blank" className="underline text-blue-600">
+                <a href="/Resume.pdf" target="_blank" className="underline text-blue-600">
                   Download it here.
                 </a>
               </p>
