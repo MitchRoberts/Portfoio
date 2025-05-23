@@ -22,7 +22,7 @@ const skills = [
   },
   {
     name: 'JavaScript',
-    icon: '/images/JavaScript.png',
+    icon: '/images/Javascript.png',
     description: 'Core language for all frontend functionality and UI behaviors in my web platforms.',
     level: 80,
   },
