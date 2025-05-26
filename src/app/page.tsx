@@ -2,6 +2,7 @@
 'use client';
 
 import { useState } from 'react';
+import type { Project } from '@/types/Project';
 import StarBackground from '@/components/StarBackground';
 import Header from '@/components/Header';
 import HomeSection from '@/components/sections/HomeSection';
@@ -11,20 +12,38 @@ import ProjectsSection from '@/components/sections/ProjectsSection';
 import ContactSection from '@/components/sections/ContactSection';
 import MUNStarProject from '@/components/projects/MUNStarProject';
 import APPartmentProject from '@/components/projects/APPartmentProject';
+import INCOMINGProject from '@/components/projects/INCOMINGProject';
+import TripTailorProject from '@/components/projects/TripTailorProject'
 
 
-const allProjects = [
+const allProjects: Project[] = [
   {
     slug: "munstar-1",
     title: "MUNStar-1 Communications",
     description: "Designed and implemented the satellite's internal and external communication systems using UART, RS-485, and I2C.",
-    tech: ["VHDL", "UART", "C", "Python", "Embedded"],
+    tech: ["VHDL", "UART", "C", "C++", "Python", "Embedded"],
+    platform: 'gitlab'
   },
   {
     slug: "appartment",
     title: "APPartment Web Platform",
     description: "Full-stack app for rental listings, messaging, and appointment booking.",
-    tech: ["React", "Firebase", "Tailwind CSS", "Next.js"],
+    tech: ["React", "Firebase", "Tailwind CSS", "Next.js", "Figma"],
+    platform: 'github',
+  },
+  {
+    slug: "INCOMING!",
+    title: "INCOMING! Game",
+    description: "Turn based artillery shooter game developed in Unity with custom UDP / TCP networking code.",
+    tech: ["C#", "Unity", "Networking"],
+    platform: 'github',
+  },
+  {
+    slug: "TripTailor",
+    title: "TripTailor",
+    description: "Fulll-stack app for helping create itineraries, and make your own for places you travel.",
+    tech: ["React", "CSS", "Javascript", "GoLang", "PostgreSQL", "Docker"],
+    platform: 'github',
   },
 ];
 
@@ -54,10 +73,10 @@ export default function Page() {
 
   return (
     <div className="relative bg-black text-white min-h-screen overflow-hidden">
-      <div className="fixed inset-0 z-50 pointer-events-none">
+      <div className="fixed inset-0 z-10 pointer-events-none">
         <StarBackground />
       </div>
-      <div className="relative z-10">
+      <div className="relative z-50">
         <Header onNavigate={handleNavigate} activeSection={activeSection} />
         <div
           className={`pt-24 transition-opacity duration-300 ${
@@ -77,6 +96,12 @@ export default function Page() {
           )}
           {activeSection === 'projectDetail' && selectedProjectSlug === 'appartment' && (
             <APPartmentProject onBack={() => handleNavigate('projects')} />
+          )}
+          {activeSection === 'projectDetail' && selectedProjectSlug === 'INCOMING!' && (
+            <INCOMINGProject onBack={() => handleNavigate('projects')} />
+          )}
+          {activeSection === 'projectDetail' && selectedProjectSlug === 'TripTailor' && (
+            <TripTailorProject onBack={() => handleNavigate('projects')} />
           )}
         </div>
       </div>
