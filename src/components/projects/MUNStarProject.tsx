@@ -110,7 +110,7 @@ export default function MUNStarProject({ onBack }: MUNStarProjectProps) {
       </div>
 
 
-      <p className="text-gray-300 mb-6 text-lg leading-relaxed">
+      {/* <p className="text-gray-300 mb-6 text-lg leading-relaxed">
         As the team lead for the communications subsystem of the MUNStar-1 CubeSat, I designed and implemented
         the satellite’s internal and external communication architecture. This included developing UART and
         RS-485-based interfaces between subsystems and creating reliable downlink protocols for ground communication.
@@ -119,7 +119,7 @@ export default function MUNStarProject({ onBack }: MUNStarProjectProps) {
       <p className="text-gray-300 mb-6 text-lg">
         All firmware was developed in VHDL and C, tested using AMDs Vivado software, and deployed to ZedBoard prototypes.
         CRC32, erasure coding, and telemetry packetization were implemented to improve link reliability.
-      </p>
+      </p> */}
 
       <div className="flex flex-wrap gap-2 mb-6">
         {["VHDL", "UART", "C", "RS-485", "Embedded Systems"].map((tech) => (
