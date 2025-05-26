@@ -33,8 +33,8 @@ export default function TripTailorProject({onBack} : TripTailorProjectProps) {
 							Users can add detailed trip events and metadata such as location, tags, and price.
 						</p>
 						<div className="flex flex-col sm:flex-row justify-center gap-6">
-							<img src="/images/Citin1.png" alt="First" className="h-[500px] object-cover rounded-lg shadow-md" />
-							<img src="/images/Citin2.png" alt="Second" className="h-[500px] object-cover rounded-lg shadow-md" />
+							<img src="/images/CItin1.png" alt="First" className="h-[500px] object-cover rounded-lg shadow-md" />
+							<img src="/images/CItin2.png" alt="Second" className="h-[500px] object-cover rounded-lg shadow-md" />
 						</div>
 					</div>
 
