@@ -1,4 +1,5 @@
 'use client';
+
 import { useState } from 'react';
 
 export default function HomeSection() {
@@ -7,7 +8,7 @@ export default function HomeSection() {
   return (
     <section className="h-[80vh] flex flex-col items-center justify-center text-center relative z-10">
       <h1 className="text-5xl md:text-7xl font-bold mb-4">Mitch Roberts</h1>
-      <p className="text-xl md:text-2xl mb-6">Engineer | Web Developer | Space-Tech Enthusiast</p>
+      <p className="text-xl md:text-2xl mb-6">Computer Engineering Student</p>
       <div className="flex gap-4">
         <button
           onClick={() => setShowResume(true)}

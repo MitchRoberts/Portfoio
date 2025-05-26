@@ -1,4 +1,3 @@
-// components/StarBackground.tsx
 'use client';
 
 import { useEffect, useState } from "react";

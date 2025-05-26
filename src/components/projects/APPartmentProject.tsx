@@ -1,3 +1,5 @@
+'use client'
+
 //import Image from 'next/image';
 
 type APPartmentProjectProps = {
@@ -26,7 +28,14 @@ export default function APPartmentProject({ onBack }: APPartmentProjectProps) {
 				Currently, the websit is still under development, but the core features are implemented, and has been deployed for internal testing with
 				potential investors. Constructive feedback will be given, and implemented to improve user experience, functionality, and look of the website.
 			</p>
-			
+			<a
+				href="https://github.com/jordyob03/TripTailor"
+				target="_blank"
+				rel="noopener noreferrer"
+				className="text-blue-400 hover:underline text-sm"
+			>
+				View on GitHub →
+			</a>
 		</section>
 	)
 }
