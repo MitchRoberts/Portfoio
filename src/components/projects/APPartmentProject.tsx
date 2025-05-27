@@ -131,7 +131,7 @@ export default function APPartmentProject({ onBack }: APPartmentProjectProps) {
 						</tr>
 						<tr>
 							<td className="px-6 py-4 font-bold text-white">Maps & Geo</td>
-							<td className="px-6 py-4">Google Maps API, GeoFirestore</td>
+							<td className="px-6 py-4">MapBox, GeoFirestore</td>
 							<td className="px-6 py-4">Autocomplete, coordinates, and location-based filtering for rentals</td>
 						</tr>
 						<tr>
