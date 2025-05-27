@@ -94,14 +94,6 @@ export default function APPartmentProject({ onBack }: APPartmentProjectProps) {
 					Users will also be able to edit their profiles, including their roles, profile picture, and will be able to view their ratings from here. There is also a mobile friendly UI being worked on, and soon completed.
 				</p>
 			</div>
-			
-			{/* <div className="bg-gray-800/60 p-6 mb-10 rounded-xl shadow-lg border border-gray-700">
-				<p className="text-gray-300 mb-2 text-lg leading-relaxed">
-					Currently, the website is still under development, but the core features are implemented, and has been deployed for internal testing with
-					potential investors. Constructive feedback will be given, and implemented to improve user experience, and functionality. The UI is in a prototype phase,
-					and will be greatly improved on before commercial deployment.
-				</p>
-			</div> */}
 
 			<h3 className="text-2xl mt-16 font-bold text-white">Techn Stack</h3>
 			<div className="mt-4 border border-gray-700 mb-10 rounded-lg overflow-hidden">
@@ -131,7 +123,7 @@ export default function APPartmentProject({ onBack }: APPartmentProjectProps) {
 						</tr>
 						<tr>
 							<td className="px-6 py-4 font-bold text-white">Maps & Geo</td>
-							<td className="px-6 py-4">Google Maps API, GeoFirestore</td>
+							<td className="px-6 py-4">MapBox, GeoFirestore</td>
 							<td className="px-6 py-4">Autocomplete, coordinates, and location-based filtering for rentals</td>
 						</tr>
 						<tr>
