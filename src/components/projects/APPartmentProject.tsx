@@ -147,16 +147,6 @@ export default function APPartmentProject({ onBack }: APPartmentProjectProps) {
 					</tbody>
 				</table>
 			</div>
-
-
-			<a
-				href="https://github.com/jordyob03/TripTailor"
-				target="_blank"
-				rel="noopener noreferrer"
-				className="text-blue-400 hover:underline text-sm"
-			>
-				View on GitHub →
-			</a>
 		</section>
 	)
 }
