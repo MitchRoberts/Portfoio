@@ -56,6 +56,18 @@ const skills = [
     description: 'Fast utility-first styling for every screen size.',
     level: 80,
   },
+  {
+    name: 'MongoDB',
+    icon: '/images/Mongo.png',
+    description: 'Industry standard NoSQL database used to hold various types of data',
+    level: 80,
+  },
+  {
+    name: 'OpenAI',
+    icon: '/images/OpenAI.png',
+    description: 'Using AI to help deliver analysis of financial data',
+    level: 70,
+  },
 ];
 
 export default function SkillsSection() {

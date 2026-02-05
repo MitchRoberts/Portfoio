@@ -2,22 +2,22 @@
 
 import Image from 'next/image';
 
-type APPartmentProjectProps = {
+type RightRenterProjectProps = {
   onBack: () => void;
 };
 
-export default function APPartmentProject({ onBack }: APPartmentProjectProps) {
+export default function RightRenterProject({ onBack }: RightRenterProjectProps) {
 	return (
 		<section className='max-w-5xl mx-auto px-6 py-20'>
 			<button onClick={onBack} className="text-sm text-gray-400 hover:text-white mb-6">
 				← Back to Projects
 			</button>
 
-			<h2 className='text-4xl font-bold mb-4'>APPartment Rental Management Hub</h2>
+			<h2 className='text-4xl font-bold mb-4'>RightRenter Rental Management Hub</h2>
 
 			<div className="bg-gray-800/60 p-6 mb-10 rounded-xl shadow-lg border border-gray-700">
 				<p className="text-gray-300 mb-2 text-lg leading-relaxed">
-					APPartment is a responsive web platform designed to streamline rental property management. Landlords can create listings
+					RightRenter is a responsive web platform designed to streamline rental property management. Landlords can create listings
 					with photos, set rental details, and view tenant applications. Tenants can browse nearby properties, request viewing appointments,
 					and communicate with landlords via an integrated messaging system.
 				</p>
@@ -26,7 +26,7 @@ export default function APPartmentProject({ onBack }: APPartmentProjectProps) {
 			<div className="bg-gray-800/60 p-6 mb-10 rounded-xl shadow-lg border border-gray-700">
 			<h4 className="text-2xl font-bold text-white mb-2">Role Bassed Access</h4>
 				<p className="text-gray-300 mb-2 text-lg leading-relaxed">
-					APPartment features Role Based Access, and can sign up as either a landlord or a tenant! Depending on the users role, the website behaves differently,
+					RightRenter features Role Based Access, and can sign up as either a landlord or a tenant! Depending on the users role, the website behaves differently,
 					with different dashabords and functionalities.
 				</p>
 				<div className="flex justify-center">
@@ -47,7 +47,7 @@ export default function APPartmentProject({ onBack }: APPartmentProjectProps) {
 			<div className="bg-gray-800/60 p-6 mb-10 rounded-xl shadow-lg border border-gray-700">
 				<h4 className="text-2xl font-bold text-white mb-2">Map Integration</h4>
 				<p className="text-gray-300 mb-4">
-					In the APPartment App, you are able to view all listings on an interactive map. Rentals display the approximate distance from the tenants current location.
+					In the RightRenter App, you are able to view all listings on an interactive map. Rentals display the approximate distance from the tenants current location.
 					Filters are also available to furthur narrow down search results.
 				</p>
 				<div className="flex justify-center">
@@ -56,9 +56,9 @@ export default function APPartmentProject({ onBack }: APPartmentProjectProps) {
 			</div>
 
 			<div className="bg-gray-800/60 p-6 mb-10 rounded-xl shadow-lg border border-gray-700">
-				<h4 className="text-2xl font-bold text-white mb-2">Map Integration</h4>
+				<h4 className="text-2xl font-bold text-white mb-2">Appointment Booking</h4>
 				<p className="text-gray-300 mb-4">
-					Tenants can request viewings directly froml istings, by simply clicking on them! Landlords can manage their requests on a seperate page,
+					Tenants can request viewings directly from istings, by simply clicking on them! Landlords can manage their requests on a seperate page,
 					and they are notified when a new request is submitted. There is also an optional chat feature that opens when requesting, to clarify appointment details.
 				</p>
 				<div className="flex justify-center">
@@ -67,7 +67,7 @@ export default function APPartmentProject({ onBack }: APPartmentProjectProps) {
 			</div>
 
 			<div className="bg-gray-800/60 p-6 mb-10 rounded-xl shadow-lg border border-gray-700">
-				<h4 className="text-2xl font-bold text-white mb-2">Itinerary Builder</h4>
+				<h4 className="text-2xl font-bold text-white mb-2">Chat Feature</h4>
 				<p className="text-gray-300 mb-4">
 					Tenants and Landlords can message eachother with secure in app messaging. New message notifications appear, and they are there for follow ups with appointments,
 					and for rental price negotiations. Once a price is secured in here, landlords are then able to send the offer through the app, and once the tenant accepts, they are assigned
@@ -95,7 +95,7 @@ export default function APPartmentProject({ onBack }: APPartmentProjectProps) {
 				</p>
 			</div>
 
-			<h3 className="text-2xl mt-16 font-bold text-white">Techn Stack</h3>
+			<h3 className="text-2xl mt-16 font-bold text-white">Tech Stack</h3>
 			<div className="mt-4 border border-gray-700 mb-10 rounded-lg overflow-hidden">
 				<table className="w-full text-left text-gray-300">
 					<thead className="bg-gray-800 text-white text-lg">
@@ -128,7 +128,7 @@ export default function APPartmentProject({ onBack }: APPartmentProjectProps) {
 						</tr>
 						<tr>
 							<td className="px-6 py-4 font-bold text-white">Deployment</td>
-							<td className="px-6 py-4">Vercel</td>
+							<td className="px-6 py-4">AWS</td>
 							<td className="px-6 py-4">Automated deployments with preview URLs and production hosting</td>
 						</tr>
 						<tr>

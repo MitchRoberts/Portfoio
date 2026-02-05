@@ -11,7 +11,7 @@ import AboutSection from '@/components/sections/AboutSection';
 import ProjectsSection from '@/components/sections/ProjectsSection';
 import ContactSection from '@/components/sections/ContactSection';
 import MUNStarProject from '@/components/projects/MUNStarProject';
-import APPartmentProject from '@/components/projects/APPartmentProject';
+import RightRenterProject from '@/components/projects/RightRenterProject';
 import INCOMINGProject from '@/components/projects/INCOMINGProject';
 import TripTailorProject from '@/components/projects/TripTailorProject'
 
@@ -25,8 +25,8 @@ const allProjects: Project[] = [
     platform: 'gitlab'
   },
   {
-    slug: "appartment",
-    title: "APPartment Web Platform",
+    slug: "RightRenter",
+    title: "RightRenter Web Platform",
     description: "Full-stack app for rental listings, messaging, and appointment booking.",
     tech: ["React", "Firebase", "Tailwind CSS", "Next.js", "Figma"],
     platform: 'github',
@@ -94,8 +94,8 @@ export default function Page() {
           {activeSection === 'projectDetail' && selectedProjectSlug === 'munstar-1' && (
             <MUNStarProject onBack={() => handleNavigate('projects')} />
           )}
-          {activeSection === 'projectDetail' && selectedProjectSlug === 'appartment' && (
-            <APPartmentProject onBack={() => handleNavigate('projects')} />
+          {activeSection === 'projectDetail' && selectedProjectSlug === 'RightRenter' && (
+            <RightRenterProject onBack={() => handleNavigate('projects')} />
           )}
           {activeSection === 'projectDetail' && selectedProjectSlug === 'INCOMING!' && (
             <INCOMINGProject onBack={() => handleNavigate('projects')} />
