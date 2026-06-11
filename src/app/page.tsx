@@ -14,6 +14,7 @@ import MUNStarProject from '@/components/projects/MUNStarProject';
 import RightRenterProject from '@/components/projects/RightRenterProject';
 import INCOMINGProject from '@/components/projects/INCOMINGProject';
 import TripTailorProject from '@/components/projects/TripTailorProject'
+import IndoorAssetTrackingProject from '@/components/projects/IndoorAssetTrackingProject';
 
 
 const allProjects: Project[] = [
@@ -43,6 +44,13 @@ const allProjects: Project[] = [
     title: "TripTailor",
     description: "Fulll-stack app for helping create itineraries, and make your own for places you travel.",
     tech: ["React", "CSS", "Javascript", "GoLang", "PostgreSQL", "Docker"],
+    platform: 'github',
+  },
+  {
+    slug: "SafeTrack",
+    title: "SafeTrack: Indoor Asset Tracking",
+    description: "System for tracking assets within healthcare environments using BLE.",
+    tech: ["BLE", "C", "Embedded", "RTOS"],
     platform: 'github',
   },
 ];
@@ -102,6 +110,9 @@ export default function Page() {
           )}
           {activeSection === 'projectDetail' && selectedProjectSlug === 'TripTailor' && (
             <TripTailorProject onBack={() => handleNavigate('projects')} />
+          )}
+          {activeSection === 'projectDetail' && selectedProjectSlug === 'SafeTrack' && (
+            <IndoorAssetTrackingProject onBack={() => handleNavigate('projects')} />
           )}
         </div>
       </div>

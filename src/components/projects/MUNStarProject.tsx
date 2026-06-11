@@ -13,6 +13,9 @@ export default function MUNStarProject({ onBack }: MUNStarProjectProps) {
         ← Back to Projects
       </button>
 
+      <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-blue-400">
+        Embedded Systems / Satellite Communications
+      </p>
       <h2 className="text-4xl font-bold mb-4">MUNStar-1 Communications</h2>
       <div className="bg-gray-800/60 mb-10 p-6 rounded-xl shadow-lg border border-gray-700">
         <p className="text-gray-300 mb-2 text-lg leading-relaxed">

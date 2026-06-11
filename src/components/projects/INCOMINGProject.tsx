@@ -11,6 +11,9 @@ export default function INCOMINGProject({onBack} : INCOMINGProjectProps) {
 					← Back to Projects
 				</button>
 
+				<p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-blue-400">
+					Game Development / Multiplayer Networking
+				</p>
 				<h2 className='text-4xl font-bold mb-4'>INCOMING! Game</h2>
 			<div className="bg-gray-800/60 p-6 rounded-xl mb-10 shadow-lg border border-gray-700">
 				<p className="text-gray-300 mb-2 text-lg leading-relaxed">

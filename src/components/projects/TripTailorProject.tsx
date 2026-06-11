@@ -14,6 +14,9 @@ export default function TripTailorProject({onBack} : TripTailorProjectProps) {
 					← Back to Projects
 				</button>
 
+				<p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-blue-400">
+					Full-Stack Development / Travel Planning
+				</p>
 				<h2 className='text-4xl font-bold font-inter mb-4'>TripTailor</h2>
 				<div className="bg-gray-800/60 mb-10 p-6 z-20 rounded-xl shadow-lg border border-gray-700">
 					

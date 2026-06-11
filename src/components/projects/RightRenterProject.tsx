@@ -13,6 +13,9 @@ export default function RightRenterProject({ onBack }: RightRenterProjectProps) 
 				← Back to Projects
 			</button>
 
+			<p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-blue-400">
+				Full-Stack Development / Property Management
+			</p>
 			<h2 className='text-4xl font-bold mb-4'>RightRenter Rental Management Hub</h2>
 
 			<div className="bg-gray-800/60 p-6 mb-10 rounded-xl shadow-lg border border-gray-700">
